@@ -1,0 +1,180 @@
+```latex
+\documentclass[a4paper]{article}
+\usepackage[top=0.3in, bottom=0.3in, left=0.5in, right=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{helvet}
+\usepackage{calc}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---------- Styling ----------
+\definecolor{lightgray}{gray}{0.9}
+
+\newtcolorbox{sectionbox}{
+    colback=lightgray,
+    colframe=white,
+    boxrule=0pt,
+    arc=0pt,
+    left=4pt,
+    right=4pt,
+    top=1pt,
+    bottom=1pt,
+    width=\dimexpr\textwidth\relax
+}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black
+}
+
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.9}
+\setlist[itemize]{leftmargin=1.5em, topsep=0pt, partopsep=0pt, itemsep=0.5pt, parsep=0pt}
+\titlespacing{\section}{0pt}{0.5pt}{0.5pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\vspace*{-0.3cm}
+\begin{center}
+    {\LARGE\bfseries Idhant Sood}\\
+    New Delhi, India $\vert$ +91 9873378849 $\vert$ \href{mailto:is728@snu.edu.in}{is728@snu.edu.in}\\
+    \href{https://www.linkedin.com/in/idhantsood}{linkedin.com/in/idhantsood}
+\end{center}
+
+% ---------- PROFILE/SUMMARY ----------
+\vspace{0.1cm}
+\noindent B.Tech student in Electrical and Computer Engineering focused on RTL and digital design, with hands-on experience in Verilog, FSMs, and FPGA implementation on Artix-7. Adept at digital electronics, FPGA, VLSI, DSA, IoT development using Raspberry Pi and AWS, and data analysis with Python and SQL. Proven ability to lead projects from ideation to execution, driving data-driven efficiency and collaborating across teams. Recognized for managing cross-functional projects and delivering impactful results with strong analytical and communication skills.
+\vspace{0.3em}
+
+% ---------- EDUCATION ----------
+\begin{sectionbox}\textbf{EDUCATION}\end{sectionbox}
+\vspace{-0.3em}
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+    \textbf{Shiv Nadar University}, New Delhi & Class of 2026 \\
+    B. Tech, Electrical and Computer Engineering & CGPA: 7.650 \\[0.5em]
+    \textbf{Lancer Convent}, New Delhi & July 2022 \\
+    Class 12th (Physics, Chemistry, Mathematics, Computer Science) & 94.6\% \\
+\end{tabular*}
+
+% ---------- EXPERIENCE ----------
+\begin{sectionbox}\textbf{INTERNSHIPS AND EXPERIENCE}\end{sectionbox}
+\vspace{0em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Taiwan Summer Immersion Program} & May -- June 2025 \\
+    \textit{} &
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Participated in COMPUTEX 2025, gaining industry insights in semiconductors, AI, embedded systems, and IoT innovation.
+    \item Completed 50+ hours of Mandarin and cross-cultural training at CJCU, Taiwan, enhancing global communication skills.
+\end{itemize}
+
+\vspace{0.4em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Tata Power Delhi Distribution Limited}: Summer Intern & June -- August 2024 \\
+    \textit{} &
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Developed Selenium automation tests in Python achieving 95\% test coverage, significantly reducing manual web-app testing time by 30\%.
+    \item Optimized SAP data processing connectivity, boosting processing efficiency by 20\% and supporting backend testing through SQL-driven data validations.
+    \item Enhanced UI analytics, resulting in a 15\% operational efficiency increase by leveraging data visualization and reporting.
+\end{itemize}
+
+% ---------- SKILLS ----------
+\begin{sectionbox}\textbf{SKILLS}\end{sectionbox}
+\vspace{0em}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
+    Programming \& Software: & Python (Pandas, NumPy), Verilog HDL, C/C++, Selenium, MySQL, Data Structures and Algorithms, MATLAB, SQL Server \\
+    Embedded Systems \& Hardware: & Nexys-4 (Artix-7 FPGA), STM32, GNUSIM (8085,8051), Digital Electronics \\
+    Engineering Tools: & Xilinx Vivado Suite, Cadence Virtuoso, FPGA design, Data Visualization (Matplotlib, Seaborn) \\
+    Soft Skills: & Communication, Leadership, Teamwork, Critical Thinking, Problem Solving, Cross-functional Collaboration \\
+\end{tabularx}
+
+% ---------- PROJECTS ----------
+\begin{sectionbox}\textbf{PROJECTS}\end{sectionbox}
+\vspace{0em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Energy-Efficient POSIT Decoder and Encoder on FPGA} & CURRENT \\
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Designing and implementing energy-efficient POSIT number conversion modules to optimize digital arithmetic operations on Artix-7, projected to improve processing speed by 15\%.
+\end{itemize}
+
+\vspace{0.4em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{FPGA-Based I2C Interface for PMOD Temperature and Humidity Sensor} & \\
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Developed a 28-state FSM I2C master module in Verilog to interface Nexys A7 FPGA with PMOD HYGRO sensor for real-time temperature and humidity data acquisition.
+    \item Displayed live sensor data on a 7-segment display, demonstrating efficient protocol communication with low latency suitable for scalable IoT applications.
+    \item \textbf{Technologies Used:} Verilog HDL, Xilinx Vivado, Nexys A7 (Artix-7), PMOD HYGRO sensor.
+    \item \textbf{Impact:} Enabled real-time environmental monitoring and validated data integrity for embedded system deployments.
+\end{itemize}
+
+\vspace{0.4em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Automatic Line Follower Robot with Obstacle Detection (PID-Based Control)} & \\
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Engineered a line follower robot with dynamic obstacle detection and rerouting capabilities using a PID controller for smooth corrections.
+    \item Calibrated five IR sensors in tandem to enhance accuracy and high-speed response, improving obstacle avoidance success rate by 20\%.
+    \item \textbf{Technologies Used:} IR sensors, PID algorithm, Arduino Uno, motor driver.
+\end{itemize}
+
+\vspace{0.4em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{Water Tank Level Meter} & \\
+\end{tabularx}
+\vspace{-0.2em}
+\begin{itemize}
+    \item Designed a water level monitoring system leveraging STM32 microcontroller and various sensors, reducing water wastage by 35\% through precise level detection.
+    \item Implemented real-time data visualization on LCD, facilitating efficient water resource management.
+    \item \textbf{Technologies Used:} STM32, Arduino Uno, sensors, LCD display.
+\end{itemize}
+
+% ---------- POSITIONS OF RESPONSIBILITY ----------
+\begin{sectionbox}\textbf{POSITIONS OF RESPONSIBILITY}\end{sectionbox}
+\vspace{0em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{New Delhi Gavel Club, Toastmasters International}: Treasurer \& Vice President of Membership & \\
+\end{tabularx}
+\begin{itemize}
+    \item Managed organizational finances and streamlined onboarding procedures for over 50 members.
+    \item Earned "Best Speaker" recognition for exceptional verbal communication and data-driven presentation skills.
+\end{itemize}
+
+\vspace{0.3em}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{TiE - The Indus Entrepreneurs}: Entrepreneurship Trainee & \\
+\end{tabularx}
+\begin{itemize}
+    \item Completed entrepreneurship training focused on ideation and business simulations at IIT Delhi.
+    \item Developed a healthcare tracking system using Raspberry Pi, IoT, and AWS to monitor elderly care metrics, enabling remote health data analytics and timely interventions.
+\end{itemize}
+
+% ---------- ACHIEVEMENTS ----------
+\begin{sectionbox}\textbf{EXTRA-CURRICULARS \& ACHIEVEMENTS}\end{sectionbox}
+\vspace{0em}
+\begin{itemize}
+    \item Earned Competent Communicator certification from Toastmasters International, USA.
+    \item Secured 3rd position in TiE Delhi Region Business Idea Presentation through data-driven market analysis and pitch.
+    \item Participated actively in Model United Nations (MUN) sessions, honing critical thinking and communication.
+\end{itemize}
+
+\end{document}
+```
